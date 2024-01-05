@@ -122,6 +122,7 @@ body{
 }
 
 #modal {
+    display: none;
     width: 40rem;
     height: 29rem;
     position: fixed;
@@ -134,6 +135,12 @@ body{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     text-align: center;
+    animation: fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 #modal::-webkit-scrollbar {
